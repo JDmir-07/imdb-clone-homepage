@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- This is the header that contains the logo and search bar 
+        kind of like a navigation bar.
+    -->
+    <header>
+        <div class="logo">
+            <div class="imdb">
+                <h1>IMDb</h1>
+            </div>
+            <h1><span style="color : white;">C</span>lone</h1>
+        </div>
+        <div class="search-box">
+            <input type="text" required placeholder="Search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+    </header>
+
+    <!-- This is the main container that will show the search results -->
+    <main>
+        <div class="container">
+            <div class="row black-bg">
+                <!-- search results goes here -->
+                <!-- using bootstrap to maintain the divs with
+                    classes col-lg-3 col-md-4 col-sm-2
+                -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="movie-image d-flex justify-content-center aligng-items-center">
+                            <img class="img-fluid" src="https://m.media-amazon.com/images/M/MV5BNGJkNDQwNzUtNWE0MC00MGVjLWFjMjEtODMyNTExMTU4ZDRhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg">
+                        </div>
+                        <div class="movie-footer px-1">
+                            <h4>Harry Potter: And the wand of the grindellow</h4>
+                            <div class="rating-fav d-flex justify-content-between align-items-center">
+                                <p><span><i class="fa-solid fa-star" style="color: #f0dc05;"></i></span> 7.8</p>
+                                <p><i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <aside class="favourites">
+        <div class="favourites-heading">
+            <h2>Favourites</h2>
+        </div>
+        <div class="favourites-movies">
+            <ul class="movies-list black-bg list-unstyled">      
+                <!-- All movies that are added to favourites goes here -->
+            </ul>
+        </div>
+    </aside>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

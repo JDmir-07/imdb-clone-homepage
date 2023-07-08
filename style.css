@@ -1,0 +1,327 @@
+* {
+    margin : 0;
+    padding : 0;
+    font-family : cursive;
+}
+a {
+    text-decoration : none;
+    color : white;
+}
+body { 
+    background-color : rgb(51, 49, 49);
+    height : 100vh;
+}
+/* Header customization */
+header {
+    padding : 0 2rem;
+    padding-top : 0.2rem;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-wrap : wrap;
+    margin-bottom : 1.5rem;
+}
+
+/* logo customization */
+.logo {
+    position : absolute;
+    left : 0;
+    top : 0;
+    display : inline-flex;
+    justify-content : center;
+    align-items : center;
+    font-size : 1.2rem;
+}
+.imdb {
+    background-color : rgb(226, 211, 5);
+    padding : 0.2rem 0.8rem;
+    border-radius : 30px;
+}
+
+/* search bar customization */
+.search-box {
+    padding-left : 10px;
+    display : inline-flex;
+    justify-content : center;
+    align-items : center;
+    width : 60%;
+    max-width : 900px;
+    border : 3px solid black;
+    background-color : white;
+    overflow : hidden;
+    border-radius : 40px;
+}
+.search-box input {
+    flex-grow : 1;
+    height : 3rem;
+    border : none;
+    outline : none;
+}
+.search-box span {
+    background-color : rgb(226, 211, 5);
+    height : 3rem;
+    width : 3rem;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    cursor : pointer;
+}
+
+
+
+/* main container */
+main {
+    display : inline-block;
+    width : 70%;
+    height : 88vh;
+}
+.container, .row {
+    width : 100%;
+    height : 100%;
+}
+.row {
+    overflow : scroll;
+}
+.row::-webkit-scrollbar {
+    display : none;
+}
+.row > * {
+    margin : 10px 0;
+}
+
+/* Movie customization */
+
+.movie-image {
+    cursor : pointer;
+}
+
+
+/* aside customization / favourites list */
+
+
+.favourites {
+    display : inline-block;
+    width :29%;
+    height : 86vh;
+    vertical-align : top;
+}
+.favourites-heading {
+    text-align : center;
+    color : white;    
+}
+.favourites-heading h2{ 
+    font-size : 1.5rem !important;
+}
+.favourites-movies{ 
+    width : 100%;
+    height: 98%;
+}
+.movies-list {
+    width : 100%;
+    height : 100%;
+    overflow : scroll;
+}
+.movies-list::-webkit-scrollbar , .fav-title::-webkit-scrollbar {
+    display : none;
+}
+.fav-item {
+    border-radius : 20px;
+}
+.fav-icon {    
+    width : 4rem;
+    height : auto;
+    border : 1px solid white;
+    border-radius: 20px;
+    overflow : hidden;
+}
+.fav-title {
+    font-size : 0.9rem;
+    max-width : 90px;
+    height : 100%;
+    overflow : scroll;
+}
+.fav-delete {
+    cursor : pointer;
+}
+.fav-delete:hover {
+    color : red;
+}
+
+@media (max-width : 1200px) {
+    .logo {
+        position : static;
+    }
+    .header {
+        justify-content : space-between;
+        flex-wrap : nowrap;
+    }
+}
+@media (max-width : 900px) {
+    html {
+        font-size : 15px;
+    }
+}
+@media (max-width : 610px) {
+    html {
+        font-size : 12px;
+    }
+}
+@media (max-width : 380px) {
+    html {
+        font-size : 9px;
+    }
+    .search-box {
+        width: 100%;
+        overflow : none;
+        border : none;
+        border-radius : 0;
+    }
+    .search-box input{
+        flex-grow : none;
+        width : 85%;
+    }
+    .search-box span {
+        width : 15%;
+    }
+}
+
+/* breakpoint of favourite list and main container */
+@media (max-width : 760px) {
+    main, .row{
+        width : 100%;
+        margin : 0;
+
+    }
+    .favourites {
+        display : block;
+        width : 100%;
+        max-width : 540px;
+        margin : auto;
+        margin-top : 2rem;
+        padding-bottom : 4rem;
+        
+    }
+}
+
+/* this class is used to display the empty sentence
+when the main and favourite movie contents are empty */
+.empty {
+    width : 100%;
+    height : 100%;    
+    color : rgb(51, 49, 49);
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    text-align : center;
+}
+
+
+
+.black-bg {
+    background-color : rgba(0,0,0,0.75);
+}
+.card {
+    padding : 0.2rem;
+    background-color : rgba(17, 16, 16, 0.75);
+    color : white;
+}
+
+/* movie Footer customization */
+.movie-footer h4{ 
+    margin-top : 0.5rem;
+    height : 50px;
+    overflow : scroll;
+    font-size : 1.1rem;
+}
+.movie-footer h4::-webkit-scrollbar {
+    display : none;
+}
+.rating-fav {
+    font-size : 1rem;
+}
+.rating-fav p:nth-child(2) {
+    cursor:pointer;    
+}
+.rating-fav p:nth-child(2):hover {
+    animation : breath 800ms ease infinite;
+}
+
+@keyframes breath {
+    50% {
+        transform : scale(1.5);
+    }
+    to {
+        transform : scale(1);
+    }
+}
+
+
+/* Movie Page customization */
+
+.movie-description {
+    width : 100%;
+    height : 88vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+.movie {
+    max-width : 1200px;
+    width : 75%;
+    height : auto;
+    display : flex;
+    justify-content : space-between;
+    align-items : start;
+}
+.movie-img {
+    margin-right : 3rem;
+}
+.movie-img img {
+    border : 3px solid white;
+}
+.movie-info {
+    width : 65%;
+    height : 100%;
+}
+.plot {
+    font-size : 1.1rem;
+}
+
+@media (max-width : 900px) {
+    .movie-description {
+        overflow : scroll;
+    }
+    .movie-description::-webkit-scrollbar {
+        display : none;
+    }
+    .movie {
+        flex-direction : column;
+        justify-content : center;
+        align-items : center;
+        position : relative;
+        top : 15%;
+    }
+    .movie-info {
+        margin-top : 2rem;
+        text-align : center;
+    }
+    .movie-img {
+        margin : 0;
+    }
+}
+
+.go-back {
+    font-size : 1.2rem;
+}
+
+.pos-override {
+    position : static;
+}
+
+.custom-flex {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    flex-wrap : wrap;
+}
