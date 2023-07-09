@@ -15,4 +15,4 @@ NOTE: When typing some movies, sometimes it may take a while to get the results.
 > Movie Description
 ![Movie Page](https://github.com/JDmir-07/imdb-clone-homepage/blob/main/SS/imdb%202.PNG)
 > When added to Favourite List
-![Starting Page with favourites](https://github.com/JDmir-07/imdb-clone-homepage/blob/main/SS/imdb%202.PNG)
+![Starting Page with favourites](https://github.com/JDmir-07/imdb-clone-homepage/blob/main/SS/imdb%203.PNG)
